@@ -1,9 +1,9 @@
 package com.factory;
 
-public class Ship implements Transport{
+public class Ship implements Transport {
 
-    public Transport delivery(){
-        System.out.println("Hi");
-        return this;
+    @Override
+    public void deliver(String name) {
+        System.out.println(name);
     }
 }

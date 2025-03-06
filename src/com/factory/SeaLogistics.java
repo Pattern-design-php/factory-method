@@ -1,9 +1,9 @@
 package com.factory;
 
-public class SeaLogistics extends Logistics{
+public class SeaLogistics extends Logistics {
 
     @Override
-    public void createTransport() {
-        super.createTransport();
+    public Transport createTransport() {
+        return new Ship();
     }
 }

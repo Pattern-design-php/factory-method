@@ -1,11 +1,11 @@
 package com.factory;
 
-public class Logistics {
+public abstract class Logistics {
+    // Factory Method
+    public abstract Transport createTransport();
 
-    public void planDelivery(){
-
-    }
-    public void createTransport(){
-
+    public void planDelivery(String destination) {
+        Transport transport = createTransport();
+        transport.deliver(destination);
     }
 }
